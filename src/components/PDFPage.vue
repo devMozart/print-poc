@@ -89,6 +89,10 @@ const orientationClass = computed(() => {
     box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
     margin: 5mm auto;
   }
+
+  .price-splash {
+    animation: pulsate 2s infinite;
+  }
 }
 
 .wrapper {
@@ -169,6 +173,18 @@ const orientationClass = computed(() => {
     font-size: 40px;
     font-weight: 700;
     z-index: 1;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 </style>
